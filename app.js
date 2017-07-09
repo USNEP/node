@@ -4,7 +4,7 @@ var path = __dirname + '/views/';
 var router = express.Router();
 
 
-app.use(require('./routes'));
+app.use(require('./config/routes'));
 
 router.use(function (req,res,next) {
   console.log("/" + req.method);
